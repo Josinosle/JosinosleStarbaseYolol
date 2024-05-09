@@ -9,6 +9,7 @@ e=:rfd :PR=a/(e+z) :lsr=e>f :Y=c/(e+z) :PL=b/(e+z) goto6
 All offsets are MAGNITUDE of the rangefinder from the beam
 Right pitch = :PR Left pitch = :PL yaw = :Y
 Rangefinder distance = :rfd laser = :lsr
+min/max angles set to -180/180 for everything
 
 **Assumptions**
 Beams have equal y displacement and z displacement
