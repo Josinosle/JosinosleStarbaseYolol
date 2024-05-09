@@ -1,0 +1,19 @@
+XOffsetR= XOffsetL=
+YOffset=
+ZOffset=
+SafetyDist=
+a=45*XOffsetR b=45*XOffsetL c=45*YOffset z=zOffset f=SafetyDist
+e=:rfd :PR=a/(e+z) :lsr=e>f :Y=c/(e+z) :PL=b/(e+z) goto6
+
+**Setup**
+All offsets are MAGNITUDE of the rangefinder from the beam
+Right pitch = :PR Left pitch = :PL yaw = :Y
+Rangefinder distance = :rfd laser = :lsr
+
+**Assumptions**
+Beams have equal y displacement and z displacement
+Mining beams face inward (flip every offset otherwise)
+Rangefinder is below mining beams (flip YOffset otherwise)
+
+Rated for basic YOLOL chips
+Simple mining beam alignment script by Josinosle
